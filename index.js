@@ -29,7 +29,7 @@ app.all('/in', (req, res, next) => {
     if (req.body.ref === 'refs/heads/master') {
       //pushing to master so create a new release
       console.log(req.body.commits);
-      const releaseNotes = req.body.commits.map(commit => `${commit.message}`).join('\n');
+      const releaseNotes = req.body.commits.map(commit => `[${commit.author.username}] ${commit.message}`).reverse().join('\n');
       updateTag(releaseNotes);
     }
   }
