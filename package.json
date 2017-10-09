@@ -1,0 +1,24 @@
+{
+  "name": "webhook-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajuhaszcf/webhook-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajuhaszcf/webhook-test/issues"
+  },
+  "homepage": "https://github.com/ajuhaszcf/webhook-test#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.1",
+    "request": "^2.83.0"
+  }
+}
